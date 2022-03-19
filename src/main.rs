@@ -22,7 +22,7 @@ use std::str::from_utf8;
 const SERVER: Token = Token(0);
 
 // Some data we'll send over the connection.
-const WELCOME_MSG: &[u8] = b"Ridiculous Die Roller\n";
+const WELCOME_MSG: &[u8] = b"Ridiculous Die Roller\nusage: <<roll>>d<<sides>> (e.g. 2d10)\n";
 
 #[cfg(not(target_os = "wasi"))]
 fn main() -> io::Result<()> {
