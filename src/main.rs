@@ -227,7 +227,7 @@ fn main() {
 
 fn rollz_it(sides: i32, rolls: i32) -> structs::Rolled {
     let dt: DateTime<Utc> = Utc::now();
-    let dt_str: String = dt.format("%H:%M.%S %d.%m.%Y").to_string();
+    let dt_str: String = dt.format("%Y-%m-%dT%H:%M:%S.%3fZ").to_string();
 
     let mut rng = thread_rng();
     let uniform = rand::distributions::Uniform::new_inclusive(1,sides);
