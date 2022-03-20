@@ -5,4 +5,4 @@ rustflags = [
 
 [build]
 [target.armv7-unknown-linux-gnueabihf]
-linker = "/opt/gcc-arm-rpi-cross-compile/bin/arm-none-linux-gnueabihf-gcc"
+linker = "arm-none-linux-gnueabihf-gcc"
