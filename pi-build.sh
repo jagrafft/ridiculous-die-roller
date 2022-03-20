@@ -1,2 +1,2 @@
 #!/bin/sh
-cargo build --target armv7-unknown-linux-gnueabihf
+cargo build --target arm-unknown-linux-gnueabihf
