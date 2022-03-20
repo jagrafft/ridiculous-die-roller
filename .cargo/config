@@ -1,0 +1,8 @@
+rustflags = [
+"-C", "link-arg=-lgcc",
+"-C", "prefer-dynamic",
+]
+
+[build]
+[target.armv7-unknown-linux-gnueabihf]
+linker = "/opt/gcc-arm-11.2-2022.02-aarch64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-gcc"
